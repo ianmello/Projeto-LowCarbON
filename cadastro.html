@@ -26,17 +26,18 @@
                     </div>
                     <div class="input-box">
                         <span class="details">Senha</span>
-                        <input type="password" placeholder="Digite sua senha" id="password" class="password" required >
+                        <input type="password" placeholder="Digite sua senha" id="password" class="password" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Nome de Usuário</span>
-                        <input type="text" placeholder="Digite seu nome de usuário" id="user_name" class="user_name"required >
+                        <input type="text" placeholder="Digite seu nome de usuário" id="user_name" class="user_name" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Confirmar senha</span>
-                        <input type="password" placeholder="Digite sua senha novamente" class="confirmPassword" required >
+                        <input type="password" placeholder="Digite sua senha novamente" class="confirmPassword" required>
                     </div>
                         <input type="submit" value="Cadastrar" id="submit" class="sub">
+                        <a href="tela_login.html">Já tem uma conta? Faça o seu login aqui!</a>
                 </div>
                 
             </form>
@@ -48,10 +49,6 @@
             // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
         import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
-
-        function redirect(){
-            window.location.assign("tela_login.html")
-        }
 
     // Your web app's Firebase configuration
         const firebaseConfig = {
@@ -97,7 +94,7 @@
 
             });
                 alert("Cadastro realizado com sucesso!");
-                redirect()
+                
             })
 
             </script>
